@@ -1,0 +1,16 @@
+options:
+  directory: "/var/named"
+  forwarders: "8.8.8.8, 8.8.4.4"
+
+zones:
+  - name: "."
+    type: "hint"
+    file: "named.ca"
+
+  - name: "meudominio.com"
+    type: "master"
+    file: "meudominio.com.zone"
+
+  - name: "0.168.192.in-addr.arpa"
+    type: "master"
+    file: "0.168.192.in-addr.arpa.zone"

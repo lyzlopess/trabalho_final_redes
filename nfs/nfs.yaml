@@ -1,0 +1,8 @@
+exports:
+  - path: /path/to/shared/folder
+    options: rw, sync, no_subtree_check
+    clients:
+      - ip: 192.168.0.1
+        options: rw
+      - ip: 192.168.0.2
+        options: ro

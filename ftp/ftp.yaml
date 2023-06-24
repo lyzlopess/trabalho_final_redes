@@ -1,0 +1,8 @@
+ftp:
+  port: 21
+  passive_mode: true
+  anonymous_enable: true
+  local_enable: true
+  write_enable: true
+  chroot_local_user: true
+  ftp_home_directory: /path/to/ftp/home
